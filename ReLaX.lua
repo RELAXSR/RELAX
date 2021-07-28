@@ -4224,7 +4224,6 @@ Welcome To Source
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '⌔ Source Channel',url="https://t.me/Vc33h"}},
-{{text = '⌔ Exp Source',url="t.me/St3R7"}},
 {{text = '⌔ Developer',url="t.me/NNUUU"}},
 {{text = '⌔ Tws ReLaX',url="https://t.me/N5zbot"}},
 }
@@ -10398,7 +10397,7 @@ if SecondSudo(msg) then
 if text == "تحديث السورس" or text == "تحديث سورس" then 
 Dev_Ali(msg.chat_id_, msg.id_, 1, '⌔︙جاري تحديث سورس ريلاكس', 1, 'md') 
 os.execute('rm -rf ReLaX.lua') 
-os.execute('wget https://raw.githubusercontent.com/ReLaXTEM/ReLaX/master/ReLaX.lua') 
+os.execute('wget https://raw.githubusercontent.com/ReLaXSR/ReLaX/main/ReLaX.lua') 
 dofile('ReLaX.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
