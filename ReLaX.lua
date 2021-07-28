@@ -8664,7 +8664,7 @@ Dev_Ali(msg.chat_id_, msg.id_, 1, '⌔︙تم الغاء امر الزخرفه',
 DevAli:del(ReLaX..'Zrf:Ali'..msg.chat_id_..msg.sender_user_id_)
 return false  
 end 
-UrlZrf = https.request('https://apiali.ml/zrf.php?ali='..URL.escape(text)) 
+UrlZrf = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(text)) 
 Zrf = JSON.decode(UrlZrf) 
 t = "⌔︙قائمة الزخرفه ↫ ⤈\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n"
 i = 0
@@ -8710,7 +8710,7 @@ end
 if not DevAli:get(ReLaX..'Ali:Brg:Ali'..msg.chat_id_) then
 if text and text:match("^برج (.*)$") and ChCheck(msg) or text and text:match("^برجي (.*)$") and ChCheck(msg) then 
 local TextBrg = text:match("^برج (.*)$") or text:match("^برجي (.*)$") 
-UrlBrg = https.request('https://apiali.ml/brg.php?brg='..URL.escape(TextBrg)) 
+UrlBrg = https.request('https://apiabs.ml/brg.php?brg='..URL.escape(TextBrg)) 
 Brg = JSON.decode(UrlBrg) 
 t = Brg.ok.ali  
 Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
@@ -8826,7 +8826,7 @@ end
 if not DevAli:get(ReLaX..'Ali:Age:Ali'..msg.chat_id_) then
 if text and text:match("^احسب (.*)$") and ChCheck(msg) or text and text:match("^عمري (.*)$") and ChCheck(msg) then 
 local TextAge = text:match("^احسب (.*)$") or text:match("^عمري (.*)$") 
-UrlAge = https.request('https://apiali.ml/age.php?age='..URL.escape(TextAge)) 
+UrlAge = https.request('https://apiabs.ml/age.php?age='..URL.escape(TextAge)) 
 Age = JSON.decode(UrlAge) 
 t = Age.ok.ali
 Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
@@ -8846,7 +8846,7 @@ end
 if not DevAli:get(ReLaX..'Ali:Mean:Ali'..msg.chat_id_) then
 if text and text:match("^معنى الاسم (.*)$") and ChCheck(msg) or text and text:match("^معنى اسم (.*)$") and ChCheck(msg) then 
 local TextMean = text:match("^معنى الاسم (.*)$") or text:match("^معنى اسم (.*)$") 
-UrlMean = https.request('https://apiali.ml/Mean.php?Ali='..URL.escape(TextMean)) 
+UrlMean = https.request('https://apiabs.ml/Mean.php?Abs='..URL.escape(TextMean)) 
 Mean = JSON.decode(UrlMean) 
 t = Mean.ok.ali
 Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
@@ -8854,7 +8854,7 @@ end
 end
 --     Source ReLaX     --
 if text == "غنيلي" and ChCheck(msg) then
-data,res = https.request('https://apiabs.ml/Audios.php')
+data,res = https.request('https://vvvzvv.ml/amirVois/Teland.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
