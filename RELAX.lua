@@ -1479,10 +1479,9 @@ end
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⌔︙تم حذف الاوامر المضافه في المجموعه", 1, 'html')
 end
 if text == "ترتيب الاوامر" then
+if text == "ترتيب الاوامر" and Constructor(msg) then
 DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
 DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"ا")
-DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
-DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"تك")
 DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
 DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"م")
 DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
@@ -1493,12 +1492,30 @@ DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ")
 DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"من")
 DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
 DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"اس")
+DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":مط","رفع مطور")
+DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"مط")
+DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":ثانوي","رفع مطور ثانوي")
+DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"ثانوي")
+DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
+DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"تك")
 DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
 DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
 DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
 DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
-send(msg.chat_id_, msg.id_,"⌔︙تم ترتيب الاوامر بالشكل التالي ↫ ⤈\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n⌔︙ايدي ↫ ا\n⌔︙تنزيل الكل ↫ تك\n⌔︙رفع مميز ↫ م\n⌔︙رفع ادمن ↫ اد \n⌔︙رفع مدير ↫ مد \n⌔︙رفع منشئ ↫ من \n⌔︙رفع منشئ اساسي ↫ اس  \n⌔︙تفعيل الايدي بالصوره ↫ تفع\n⌔︙تعطيل الايدي بالصوره ↫ تعط\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉")  
-end
+DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":ر","الرابط")
+DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"ر")
+DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":رر","ردود المدير")
+DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"رر")
+DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":،،","مسح المكتومين")
+DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"،،")
+DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
+DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"رد")
+DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":سح","مسح سحكاتي")
+DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"سح")
+DevHdr:set(RELAX.."Set:Cmd:Group:New1"..msg.chat_id_..":رس","مسح رسائلي")
+DevHdr:sadd(RELAX.."List:Cmd:Group:New"..msg.chat_id_,"رس")
+    send(msg.chat_id_, msg.id_,"⌔︙تم ترتيب الاوامر بالشكل التالي ~\n- ايدي - ا .\n- رفع مميز - م .\n-رفع ادمن - اد .\n- رفع مدير - مد . \n- رفع منشى - من . \n- رفع منشئ الاساسي - اس  .\n- رفع مطور - مط .\n-رفع مطور ثانوي - ثانوي .\n- تنزيل الكل - تك .\n- تعطيل الايدي بالصوره - تعط .\n- تفعيل الايدي بالصوره - تفع .\n- الرابط - ر .\n- ردود المدير - رر .\n- مسح المكتومين - ،، .\n- اضف رد - رد .\n- مسح سحكاتي - سح .\n- مسح رسائلي - رس .")  
+    end
 if text == "اضف امر" or text == "اضافة امر" or text == "اضافه امر" and ChCheck(msg) then
 DevHdr:set(RELAX.."Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⌔︙ارسل الامر القديم", 1, 'html')
@@ -4175,13 +4192,13 @@ end
 if text == "السورس" or text == "سورس" then 
 Text = [[
 Welcome To Source
-⌔︙[ReLaX TEAM](https://t.me/Vc33h)
+⌔︙[RELAX TEAM](https://t.me/Vc33h)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '⌔ Source Channel',url="https://t.me/Vc33h"}},
 {{text = '⌔ Developer',url="t.me/NNUUU"}},
-{{text = '⌔ Tws ReLaX',url="https://t.me/Z_A_XBOT"}},
+{{text = '⌔ Tws RELAX',url="https://t.me/Z_A_XBOT"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8803,7 +8820,7 @@ absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, RELAXTEAM, 14, string.len(m
 DevHdr:set(RELAX..'Abs:Audios:Abs'..msg.chat_id_,true)  
 end
 if text == "غنيلي" and not DevHdr:get(RELAX..'Abs:Audios:Abs'..msg.chat_id_) and SourceCh(msg) then
-data,res = https.request('https://apiabs.ml/Audios.php')
+data,res = https.request('https://vvvzvv.ml/amirVois/Teland.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
